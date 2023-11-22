@@ -1,77 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Hindu</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair Display:wght@900&display=swap" />
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Merriweather Sans:wght@400;700;800&display=swap" />
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap" />
+    <title>Document</title>
 </head>
-
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">National</a></li>
-                <li><a href="#">International</a></li>
-                <li><a href="#">Business</a></li>
-                <li><a href="#">Sports</a></li>
-                <li><a href="#">Entertainment</a></li>
-                <li><a href="#">Lifestyle</a></li>
-                <li><a href="#">Tamil</a></li>
-                <li><a href="#">Most Read</a></li>
-                <li><a href="#">Blogs</a></li>
-                <li><a href="#">Top Headlines</a></li>
+    <nav class="container flex-d-col align-center desktop">
+        <div class="logo-box flex justify-center"><img class="logo" src="./Resources/thehindu-logo.svg" alt=""></div>
+        <div class="first-nav flex space-between">
+            <ul class="flex">
+                <li class="nav-item">India</li>
+                <li class="nav-item">World</li>
+                <li class="nav-item">Opinion</li>
+                <li class="nav-item">Sports</li>
+                <li class="nav-item">e-Paper</li>
             </ul>
-        </nav>
+            <div class="menu-btn flex align-center justify-center"><img src="./Resources/menu-hamber-icon.svg" alt=""></div>
+        </div>
+        <div class="second-nav flex space-between">
+            <div class="list-2 flex align-center">
+                <ul class="nav-list-2 flex list-style-none">
+                    <li class="nav-ordered">Elections</li>
+                    <li class="nav-ordered">/</li>
+                    <li class="nav-ordered">Health</li>
+                    <li class="nav-ordered">/</li>
+                    <li class="nav-ordered">Editorial</li>
+                    <li class="nav-ordered" id="search">SEARCH</li>
+                  </ul>
+            </div>
+            <div class="flex">
+                <ul class="btn-list flex space-between list-style-none align-center">
+                    <li class="trial">FREE TRIAL</li>
+                    <button class="nav-btn" id="subscribe">SUBSCRIBE</button>
+                    <button class="nav-btn" id="login">LOGIN</button>
+                </ul>
+            </div>
+        </div>
+    </nav>
     </header>
 
-    <main>
-        <section class="featured-news">
-            <h2>Featured News</h2>
-            <!-- Insert Featured News Items here -->
-        </section>
-
-        <section class="national-news">
-            <h2>National</h2>
-            <!-- Insert National News Items here -->
-        </section>
-
-        <section class="international-news">
-            <h2>International</h2>
-            <!-- Insert International News Items here -->
-        </section>
-
-        <section class="business-news">
-            <h2>Business</h2>
-            <!-- Insert Business News Items here -->
-        </section>
-
-        <section class="sports-news">
-            <h2>Sports</h2>
-            <!-- Insert Sports News Items here -->
-        </section>
-
-        <section class="entertainment-news">
-            <h2>Entertainment</h2>
-            <!-- Insert Entertainment News Items here -->
-        </section>
-
-        <section class="lifestyle-news">
-            <h2>Lifestyle</h2>
-            <!-- Insert Lifestyle News Items here -->
-        </section>
-
-        <section class="tamil-news">
-            <h2>Tamil</h2>
-            <!-- Insert Tamil News Items here -->
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2022 The Hindu. All rights reserved.</p>
-    </footer>
+    <section class="section-1 grid page-size">
+        <div class="first flex-d-col">
+            <a class="heading" id="premium">Premium</a>
+            <div class="first-item flex-d-col">
+                <a class="content" href="#">What the OECD report says of climate finance ahead of COP 28 | Explained</a>
+                <a href="#" class="author">RISHIKA PARDIKAR</a>
+            </div>
+            <div class="first-item flex-d-col">
+                <a class="content" href="#">How do animals get their skin patterns? An answer comes from physics</a>
+                <a class="author" href="#">RISHIKA PARDIKAR</a>
+            </div>
+            <div class="first-item flex-d-col">
+                <a class="content" href="#">Making sense of the employment challenge</a>
+                <a class="author" href="#">RISHIKA PARDIKAR</a>
+            </div>
+            <div class="first-item flex-d-col">
+                <a class="content" href="#">In Nepal’s TikTok ban there’s more than meets the eye</a>
+                <a class="author" href="#">RISHIKA PARDIKAR</a>
+            </div>
+            <div class="first-item flex-d-col">
+                <a class="content" href="#">What the OECD report says of climate finance ahead of COP 28 | Explained</a>
+                <a class="author" href="#">RISHIKA PARDIKAR</a>
+            </div>
+            <div class="line"></div>
+            <div class="first-item-2 flex-d-col">
+                <a href="#" class="heading">RAJASTHAN ASSEMBLY</a>
+                <a class="content" href="#">Rajasthan Assembly polls | CM Gehlot releases Congress’ poll manifesto for elections</a>
+            </div>
+            <div class="first-item-2 flex-d-col" id="last-item">
+                <a href="#" class="heading">KERELA</a>
+                <a class="content" href="#">Former student opens fire at school in Kerala’s Thrissur district</a>
+            </div>
+        </div>
+        <div class="second flex-d-col">
+            <div class="hero flex-d-col">
+                <a class="heading" href="#" id="india">INDIA</a>
+                <a href="#" class="headline">Uttarkashi tunnel rescue | TV channels advised to be cautious, sensitive while reporting</a>
+                <a href="#" class="second-content">The I&B Ministry told news channels to ensure that rescue operations are in no way disrupted or disturbed by the presence of cameramen, reporters, or equipment</a>
+                <img class="second-img" src="./Resources/28_Uttarakhand_Uttarkashi_Tunnel_Collapse_ground_zero_spotlight_21_11_delhi.jpeg" alt="image">
+            </div>
+        </div>
+        <div class="third flex-d-col">
+            <a href="#" class="heading" id="latest-news">Latest News</a>
+            <ul class="news-list list-style-none">
+                <li class="third-item">Eutelsat OneWeb gets regulatory approval for satellite broadband services</li>
+                <li class="third-item">Domestic air traffic again touch a record high; airlines carried 4,59,526 passengers on Nov 20</li>
+                <li class="third-item">Andhra Pradesh moves SC against Chandrababu Naidu’s bail, says High Court held a ‘mini-trial’</li>
+                <li class="third-item">ICC moves men's U-19 World Cup from Sri Lanka to South Africa</li>
+                <li class="third-item" id="last-item">U.S. Supreme Court rejects TCS appeal against $140 mn punitive damages order</li>
+            </ul>
+            <div class="line"></div>
+            <div class="first-item-2 flex-d-col">
+                <a href="#" class="third-heading">SPONSERED</a>
+                <a class="content" href="#">Top 10 Mattresses in India- Detailed Review and Analysis - Updated(2023)</a>
+            </div>
+            <div class="first-item-2 flex-d-col" id="last-item">
+                <a href="#" class="third-heading">SPONSERED</a>
+                <a class="content" href="#">Dr Vetrikumar from Parvathy Hospital Performed a Miraculous Surgery and Successfully treated a Complex Bilateral Osteoarthritis case</a>
+        </div>
+    </section>
 </body>
-
 </html>
