@@ -13,6 +13,11 @@
     flex-direction: column;
 }
 
+.flex-d-row
+{
+    display: flex;
+    flex-direction: row;
+}
 .grid{
     display: grid;
 }
@@ -32,10 +37,16 @@
 .list-style-none{
     list-style: none;
 }
+.border-down
+{
+    border-bottom: 1px solid grey;
+}
+.border-up
+{
+    border-top: 1px solid grey;
+}
 
-
-
-
+/* ------------------------------------------------------------------------------ */
 *{
     margin: 0;
     padding: 0;
@@ -238,6 +249,9 @@ nav{
     height: 350px;
     margin-top: 15px;
 }
+.second-img-2{
+    width: 100%;
+}
 
 .hero{
     padding-bottom: 10px;
@@ -249,7 +263,16 @@ nav{
     padding-left: 5px;
     margin-bottom: 15px;
 }
-
+.second h3{
+    padding: 5% 4%;
+    font-size: 18px;
+}
+.THE-HINDU-BUREAU{
+    font-size: 10px;
+    margin: 0% 0% 0% 5%;
+    padding: 0 0 6% 0;
+    border-bottom: 1px solid grey;
+}
 .third-item{
     position: relative;
     border-bottom: 1px solid rgba(0,0,0,0.1450980392);
@@ -290,6 +313,11 @@ nav{
 .section-1>.third{
     padding-left: 26px;
     border-left: 1px solid rgba(0,0,0,0.1450980392);    
+}
+.line3{
+    background-color: grey;
+    height: 1px;
+    margin: 4px 10vw;
 }
 
 @media (max-width: 1200px){
