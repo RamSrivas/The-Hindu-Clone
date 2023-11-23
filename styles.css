@@ -1,5 +1,5 @@
 .page-size{
-    max-width: 1200px;
+    width: 80vw;
     margin: 0 auto;
 }
 
@@ -50,14 +50,11 @@
     border-right: 1px solid grey;
 }
 
-/* ------------------------------------------------------------------------------ */
+/* ---------------------------------------------------------------------------------------------------------- */
 *{
     margin: 0;
     padding: 0;
     font-family: "Merriweather";
-}
-body{
-    width: 100%;
 }
 :root{
     --orange: #b00020;
@@ -69,9 +66,9 @@ nav{
     padding-bottom: 15px;
 }
 
-.desktop{
-    margin: 0;
-    padding: 0 10vw;
+.mobile{
+    padding-left: 12px;
+    padding-right: 12px;
 }
 .logo-box{
     padding-top: 0.125rem;
@@ -100,7 +97,9 @@ nav{
     width: 170px;
     padding-top: 6px;
 }
-
+.button-list-container{
+    width: 100%;
+}
 .menu-btn{
     width: 39px;
     height: 34px;
@@ -114,7 +113,7 @@ nav{
     width: 25px;
 }
 .second-nav{
-    width: 78%;
+    width: 100%;
 }
 
 .nav-ordered{
@@ -168,11 +167,16 @@ nav{
     grid-template-columns: 1fr 2fr 1fr;
     padding-top: 15px;
     padding-bottom: 15px;
+    display: grid;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.1450980392);
 }
 
 .section-1>.first{
     border-right: 1px solid rgba(0,0,0,0.1450980392);
     margin-right: 10px;
+    grid-column-start: 1;
+    grid-row-start: 1;
 }
 
 #premium,#latest-news{
@@ -244,6 +248,7 @@ nav{
 }
 
 .section-1>.second{
+    grid-column-start: 2;
     padding: 0 10px;
 }
 
@@ -255,13 +260,14 @@ nav{
 }
 
 .second-img{
-    height: 350px;
+    width: 100%;
     margin-top: 15px;
 }
+
 .second-img-2{
     width: 100%;
+    margin-top: 15px;
 }
-
 .hero{
     padding-bottom: 10px;
     border-bottom: 1px solid rgba(0,0,0,0.1450980392);
@@ -544,4 +550,165 @@ nav{
     grid-column: 3/4;
     font-size: 18px;
     line-height: 1.55;
+}
+
+@media (min-width: 1040px){
+    .mobile *{
+        display: none!important;
+    }
+}
+
+@media (max-width: 1200px){
+    .section-1{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin-right: 0!important;
+        margin-left: 0!important;
+        width: auto!important;
+    }
+    .container-2{
+        margin: 0!important;
+        width: auto!important;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .section-1>.second{
+        grid-area: 1/1/2/3;
+    }
+    .section-1>.first{
+        grid-area: 2/1/3/2;
+        margin-right: 0;
+        padding-right: 12px;
+        padding-left: 12px;
+        border-right: none;
+    }
+    .section-1>.third{
+        grid-area: 2/2/3/3;
+        border-left: none;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    
+    .first-item>.content{
+        font-size: 18px;
+    }
+    .corousel #five,.corousel #six{
+        display: none;
+    }
+    .corousel>.card{
+        width: 25%;
+        height: 500px;
+    }
+    .section-4{
+        width: 100%;
+    }
+}
+
+@media(max-width: 990px){
+    .section-4-main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+@media(max-width: 575px){
+    .section-1{
+        /* height: 105rem; */
+        display: flex;
+        flex-direction: column;
+        margin-right: 0!important;
+        margin-left: 0!important;
+        width: auto!important;
+    }
+
+    .second>.heading{
+        font-size: 26px;
+    }
+
+
+}
+
+@media (max-width: 1080px){
+    .desktop *{
+        display: none!important;
+    }
+
+    .desktop{
+        height: 0;
+        box-shadow: none;
+    }
+
+    .mobile{
+        box-shadow: 0 5px 6px rgba(0,0,0,0.160784);
+        padding-bottom: 15px;
+    }
+
+    .open-in-app{
+        text-decoration: none;
+        color: black;
+    }
+
+    .mobile-ul{
+        padding: 4px 0;
+    }
+
+    .btn-list *{
+        margin-right: 0;
+    }
+
+    .trial{
+        font-size: 12px;
+        font-weight: bold;
+        position: relative;
+        margin-right: 7px;
+    }
+    
+    .trial::before{
+        content: '';
+        position: absolute;
+        background: url(./Resources/TH-logo.svg) no-repeat center;
+        width: 18px;
+        height: 18px;
+        top: -3px;
+        left: -23px;
+    }
+
+    #login{
+        font-size: 10px;
+        width: max-content;
+        padding: 2px 7px;
+    }
+
+    .nav-btn{
+        border-radius: 3px;
+        border: 2px solid var(--orange);
+    }
+
+    .logo-box{
+        margin-top: 0!important;
+    }
+
+    .logo{
+        width: 100%;
+        max-width: 300px;
+    }
+
+    #subscribe{
+        height: 50%;
+        font-size: 10px;
+        padding: 0 4px!important;
+        margin: auto;
+        margin-right: 7px;
+        border-radius: 2px;
+    }
+
+    .menu-btn{
+        width: 30px;
+        height: 30px;
+        padding: 0;
+        margin: auto;
+        border: none;
+    }
 }
