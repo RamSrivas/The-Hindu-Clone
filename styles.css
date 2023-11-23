@@ -505,9 +505,43 @@ nav{
 
 .section6{
     background-color: black;
+    color: white;
+    
 }
 
-.sec6-video
-{
-    grid-template-columns: repeat(4,1fr);
+.sec6-video{
+    grid-template-columns: 1fr 2fr 1fr;
+    margin: 4%;
+    gap: 15px;
+    
+}
+.section6>h2{
+    margin-top: 3%;
+}
+.sec6-text{
+    grid-column: 1/2;
+    color: white;
+}
+.sec6-text h4{
+    font-size: 14px;
+    padding: 10px 0;
+}
+.sec6-text h3{
+    font-size: 30px;
+    font-weight: 100;
+}
+.sec6-text p{
+    padding: 20px 0;
+    font-size: 12px;
+}
+.sec6-vid{
+    grid-column: 2/3;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.sec6-para{
+    grid-column: 3/4;
+    font-size: 18px;
+    line-height: 1.55;
 }
