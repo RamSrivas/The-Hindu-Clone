@@ -552,7 +552,7 @@ nav{
     line-height: 1.55;
 }
 
-@media (min-width: 1040px){
+@media (min-width: 1080px){
     .mobile *{
         display: none!important;
     }
@@ -567,7 +567,7 @@ nav{
         margin-left: 0!important;
         width: auto!important;
     }
-    .container-2{
+    .page-size{
         margin: 0!important;
         width: auto!important;
         padding-left: 12px;
@@ -636,7 +636,7 @@ nav{
     }
 
     .desktop{
-        height: 0;
+        height: 0px;
         box-shadow: none;
     }
 
