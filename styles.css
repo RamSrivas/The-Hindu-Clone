@@ -1,7 +1,7 @@
 .page-size{
     width: 80vw;
-    padding-right: 10vw;
-    padding-left: 10vw;
+    margin-right: 10vw;
+    margin-left: 10vw;
 }
 
 .flex{
@@ -46,6 +46,11 @@
     border-top: 1px solid grey;
 }
 
+.border-right
+{
+    border-right: 1px solid grey;
+}
+
 /* ------------------------------------------------------------------------------ */
 *{
     margin: 0;
@@ -63,6 +68,10 @@ nav{
     padding-bottom: 15px;
 }
 
+.desktop{
+    margin: 0;
+    padding: 0 10vw;
+}
 .logo-box{
     padding-top: 0.125rem;
     margin-top: 30px;
@@ -158,7 +167,6 @@ nav{
     grid-template-columns: 1fr 2fr 1fr;
     padding-top: 15px;
     padding-bottom: 15px;
-    border-bottom: 1px solid rgba(0,0,0,0.1450980392);
 }
 
 .section-1>.first{
@@ -317,8 +325,47 @@ nav{
 .line3{
     background-color: grey;
     height: 1px;
-    margin: 4px 10vw;
+    width: 100%;
 }
+.line4{
+    width: 80vw;
+    padding: 3px 0;
+    margin: 0 10vw;
+}
+.section2
+{
+    display: flex;
+}
+.section2>.flex-d-col>img{
+    width: 70%;
+    margin: 3% 0;
+}
+.section2>.flex-d-col>p{
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+.s2-button{
+    background-color: transparent;
+    border-radius: 15px;
+    border: 1px solid grey ;
+    margin: 5px;
+    padding: 4px;
+}
+.hh{
+    margin:3% 0;
+}
+.section2 h3{
+    padding: 0% 4% 5% 2%;
+}
+.section2 p{
+    font-size: 14px;
+    padding: 0% 4% 0% 2%;
+}
+.section3{
+    padding: 4% 0;
+}
+
+
 
 @media (max-width: 1200px){
     .section-1{
